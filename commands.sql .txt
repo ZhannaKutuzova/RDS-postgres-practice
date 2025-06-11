@@ -1,0 +1,11 @@
+CREATE TABLE public.my_test_table (
+  id SERIAL PRIMARY KEY,
+  name TEXT NOT NULL,
+  age INTEGER
+);
+
+INSERT INTO public.my_test_table (name, age) VALUES
+('Zhanna', 40),
+('Andrei', 41);
+
+SELECT * FROM public.my_test_table;
